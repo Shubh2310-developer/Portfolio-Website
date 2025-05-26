@@ -23,7 +23,7 @@ export function Certificates() {
   const recentCertificates = certificates.slice(0, 3)
 
   return (
-    <section id="certificates" className="py-20 bg-white dark:bg-gray-900">
+    <section id="certificates" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +32,7 @@ export function Certificates() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Certificates & Achievements</h2>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Certificates & Achievements</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A showcase of my professional certifications and achievements that demonstrate my expertise and commitment to continuous learning.
           </p>

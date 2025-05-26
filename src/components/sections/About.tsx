@@ -18,7 +18,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-white dark:bg-gray-900"
+      className="py-20 bg-background"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -28,7 +28,7 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
             About Me
           </h2>
           
@@ -44,14 +44,14 @@ export function About() {
             </div>
             
             <div className="space-y-6">
-              <p className="text-lg text-gray-600 dark:text-gray-300">
+              <p className="text-lg text-muted-foreground">
                 I'm a passionate software engineer with a strong focus on AI and web development.
                 With several years of experience in building scalable applications and
                 implementing cutting-edge AI solutions, I strive to create impactful
                 technology that makes a difference.
               </p>
               
-              <p className="text-lg text-gray-600 dark:text-gray-300">
+              <p className="text-lg text-muted-foreground">
                 My journey in tech has led me through various roles, from full-stack
                 development to AI research. I'm particularly interested in the
                 intersection of AI and web technologies, and how they can be used to
@@ -63,7 +63,7 @@ export function About() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/resume/ShubhShahResume.pdf" target="_blank">
+                  <Link href="/resume/ShubhShahResume.pdf">
                     Download Resume
                   </Link>
                 </Button>

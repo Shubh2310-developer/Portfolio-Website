@@ -54,7 +54,7 @@ function SkillCategoryCard({ category, skills, index }: SkillCategoryCardProps) 
     <FadeIn delay={index * 0.1}>
       <Card className="h-full hover:shadow-lg transition-shadow duration-300">
         <CardHeader>
-          <CardTitle className="text-xl font-bold capitalize">{category}</CardTitle>
+          <CardTitle className="text-xl font-bold capitalize text-foreground">{category}</CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">
           {skills.map((skill, idx) => (
@@ -70,7 +70,7 @@ export function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 bg-gray-50 dark:bg-gray-800"
+      className="py-20 bg-background"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -80,7 +80,7 @@ export function Skills() {
           transition={{ duration: 0.5 }}
           className="max-w-7xl mx-auto"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
             Skills & Expertise
           </h2>
 

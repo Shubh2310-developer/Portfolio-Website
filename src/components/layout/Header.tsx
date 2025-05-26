@@ -3,8 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Menu, X, Sun, Moon } from 'lucide-react'
-import { useTheme } from 'next-themes'
+import { Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils'
 
@@ -20,16 +19,11 @@ const navigation = [
 export default function Header() {
   const [mounted, setMounted] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
 
   // Prevent hydration mismatch
   useEffect(() => {
     setMounted(true)
   }, [])
-
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark')
-  }
 
   if (!mounted) {
     return (
@@ -69,14 +63,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={toggleTheme}
-                aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
-              >
-                {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-              </Button>
             </div>
           </div>
 
@@ -107,13 +93,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <Button
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={toggleTheme}
-              >
-                {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
-              </Button>
             </div>
           </div>
         )}
