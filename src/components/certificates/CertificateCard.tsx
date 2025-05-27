@@ -49,10 +49,9 @@ export function CertificateCard({ certificate }: CertificateCardProps) {
               </Badge>
             ))}
           </div>
-          {certificate.url && (
+          {certificate.pdf && (
             <motion.a
-              href={certificate.url}
-              target="_blank"
+              href={certificate.pdf}
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 transition-colors"
               whileHover={{ scale: 1.1 }}

@@ -29,27 +29,17 @@ export function About() {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-foreground mb-12">
-            About Me
-          </h2>
+              About Me
+            </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative w-64 h-64 mx-auto md:mx-0">
-              <Image
-                src="/Shubh-Avatar.jpeg"
-                alt="Shubh's profile picture"
-                fill
-                className="rounded-full object-cover"
-                priority
-              />
-            </div>
-            
-            <div className="space-y-6">
+          <div className="grid grid-cols-1 gap-12 items-center">
+              <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
                 I'm a passionate software engineer with a strong focus on AI and web development.
                 With several years of experience in building scalable applications and
                 implementing cutting-edge AI solutions, I strive to create impactful
                 technology that makes a difference.
-              </p>
+                    </p>
               
               <p className="text-lg text-muted-foreground">
                 My journey in tech has led me through various roles, from full-stack
@@ -58,7 +48,14 @@ export function About() {
                 create more intelligent and user-friendly applications.
               </p>
               
+              <p className="text-lg text-muted-foreground">
+                I am a results-driven Data Analyst with a Bachelor’s degree in Artificial Intelligence and Data Science, complemented by hands-on internships and certifications in Machine Learning, Python, and Data Structures. With strong skills in Python, SQL, data visualization, and AI automation, I specialize in transforming raw data into actionable insights and intelligent solutions. My academic foundation is enriched by real-world experience in AI/ML through projects like AI-based Early Disease Detection and Employee Performance Prediction, demonstrating my ability to integrate machine learning with domain-specific problems. Passionate about continuous learning and innovation, I aim to contribute meaningfully to data-driven decision-making and AI-powered transformation in organizations.
+
+
+              </p>
+              
               <motion.div
+                className="flex justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -68,7 +65,7 @@ export function About() {
                   </Link>
                 </Button>
               </motion.div>
-            </div>
+              </div>
           </div>
         </motion.div>
       </div>

@@ -2,32 +2,32 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Twitter, Mail, Heart } from 'lucide-react'
+import { Github, Linkedin, Twitter, Mail, Heart, Instagram } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 
 const socialLinks = [
   {
     name: 'GitHub',
     icon: Github,
-    href: 'https://github.com/shubh',
+    href: 'https://github.com/Shubh2310-developer',
     ariaLabel: 'Visit my GitHub profile',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://linkedin.com/in/shubh',
+    href: 'https://www.linkedin.com/in/shubh-shah-4908a5258/',
     ariaLabel: 'Connect with me on LinkedIn',
   },
   {
-    name: 'Twitter',
-    icon: Twitter,
-    href: 'https://twitter.com/shubh',
-    ariaLabel: 'Follow me on Twitter',
+    name: 'Instagram',
+    icon: Instagram,
+    href: 'https://www.instagram.com/shubhnotsopvt/?next=%2F',
+    ariaLabel: 'Follow me on Instagram',
   },
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:shubh@example.com',
+    href: 'mailto:shubhshahwork@gmail.com',
     ariaLabel: 'Send me an email',
   },
 ]
@@ -37,7 +37,6 @@ const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Blog', href: '#blog' },  
   { name: 'Contact', href: '#contact' },
 ]
 
@@ -135,7 +134,7 @@ export default function Footer() {
               whileHover={{ scale: 1.2, rotate: 10 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <Heart className="h-4 w-4 mx-1 text-red-500" />
+            <Heart className="h-4 w-4 mx-1 text-red-500" />
             </motion.span>
             <span>and lots of coffee.</span>
           </motion.div>

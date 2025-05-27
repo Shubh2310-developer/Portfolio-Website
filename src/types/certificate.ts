@@ -3,7 +3,7 @@ export interface Certificate {
   title: string
   issuer: string
   date: string
-  url: string
+  pdf?: string // Optional link to PDF certificate
   tags: string[]
   description?: string
 } 

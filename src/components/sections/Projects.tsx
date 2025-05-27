@@ -6,36 +6,32 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'AI-Powered Chat Application',
-    description: 'A real-time chat application with AI-powered responses and sentiment analysis.',
+    title: 'HC-P1-AI-based-Early-Disease-Detection-System',
+    description: 'AI-powered platform for early disease detection combining modern diagnostics with Ayurvedic insights.',
     image: '/projects/AI POWERED HEALTHCARE.jpeg',
-    technologies: ['React', 'Node.js', 'TensorFlow', 'WebSocket'],
-    github: 'https://github.com/shubh/ai-chat',
-    demo: 'https://ai-chat-demo.vercel.app',
+    technologies: ['Python', 'Javascript', 'TensorFlow', 'Phi-2 LLM Model'],
+    github: 'https://github.com/Shubh2310-developer/HC-P1-AI-based-Early-Disease-Detection-System'
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform with real-time inventory and payment processing.',
+    title: 'Text-to-2D Image Generation using Stable Diffusion and CLIP',
+    description: 'Text-to-image generator using Stable Diffusion and CLIP for semantically accurate and high-quality 2D visuals from natural language prompts.',
     image: '/projects/ST+CLIP.jpeg',
-    technologies: ['Next.js', 'TypeScript', 'Stripe', 'MongoDB'],
-    github: 'https://github.com/shubh/ecommerce',
-    demo: 'https://ecommerce-demo.vercel.app',
+    technologies: ['Python', 'Computer Vision', 'Pytorch', 'Hugging Face'],
+    github: 'https://github.com/Shubh2310-developer/Stable-Diffusion'
   },
   {
-    title: 'Machine Learning Dashboard',
-    description: 'Interactive dashboard for visualizing and analyzing machine learning models.',
+    title: 'Employee Performance Prediction',
+    description: 'Employee performance prediction system using machine learning to analyze HR data and forecast performance based on role, experience, and satisfaction metrics.',
     image: '/projects/eMPLOYEE.jpeg',
-    technologies: ['Python', 'React', 'D3.js', 'FastAPI'],
-    github: 'https://github.com/shubh/ml-dashboard',
-    demo: 'https://ml-dashboard.vercel.app',
+    technologies: ['Python', 'Javascript', 'Statsmodel', 'Random Forest'],
+    github: 'https://github.com/Shubh2310-developer/employee-perofrmance-prediction'
   },
   {
-    title: 'Task Management System',
-    description: 'Collaborative task management system with real-time updates and team features.',
-    image: '/projects/project4.jpg',
-    technologies: ['React', 'Firebase', 'Material-UI', 'Redux'],
-    github: 'https://github.com/shubh/task-manager',
-    demo: 'https://task-manager.vercel.app',
+    title: 'AI-Based Disease Prediction System (Heart, Diabetes & Parkinson',
+    description: 'AI-powered system that predicts Heart Disease, Diabetes, and Parkinson\'s using logistic regression based on patient data.',
+    image: '/projects/HEART.jpeg',
+    technologies: ['Python', 'Machine Learning', 'Logistic Regression' ],
+    github: 'https://github.com/Shubh2310-developer/health-care-website'
   },
 ];
 
@@ -105,15 +101,6 @@ export function Projects() {
                     >
                       <Github className="w-5 h-5 mr-2" />
                       Code
-                    </a>
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-muted-foreground hover:text-foreground"
-                    >
-                      <ExternalLink className="w-5 h-5 mr-2" />
-                      Live Demo
                     </a>
                   </div>
                 </div>

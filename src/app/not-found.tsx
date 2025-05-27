@@ -69,12 +69,12 @@ export default function NotFound() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <Button asChild>
-            <Link href="/">
-              <Home className="mr-2 h-4 w-4" />
-              Go Home
-            </Link>
-          </Button>
+        <Button asChild>
+          <Link href="/">
+            <Home className="mr-2 h-4 w-4" />
+            Go Home
+          </Link>
+        </Button>
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.05 }}
@@ -85,9 +85,9 @@ export default function NotFound() {
             variant="outline" 
             onClick={() => window.history.back()}
           >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Go Back
-          </Button>
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          Go Back
+        </Button>
         </motion.div>
       </motion.div>
     </motion.div>

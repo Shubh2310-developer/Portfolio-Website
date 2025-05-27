@@ -3,56 +3,48 @@ import { Certificate } from '@/types/certificate'
 export const certificates: Certificate[] = [
   {
     id: '1',
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
+    title: 'MACHINE LEARNING',
+    issuer: 'Agartas Academy',
     date: '2024',
-    url: 'https://aws.amazon.com/certification/',
-    tags: ['Cloud', 'AWS', 'Architecture'],
-    description: 'Professional certification for designing distributed systems on AWS'
+    pdf: '/Certificates/ML.pdf',
+    tags: ['ML', 'Python', 'Deep Learning'],
+    description: 'Completed a hands-on Machine Learning internship, gaining practical experience in model development, evaluation, and real-world data analysis.'
   },
   {
     id: '2',
-    title: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
-    date: '2023',
-    url: 'https://cloud.google.com/certification',
-    tags: ['Cloud', 'GCP', 'Development'],
-    description: 'Expertise in building scalable and reliable applications using Google Cloud'
+    title: 'AI-ML INTERNSHIP',
+    issuer: 'Google for Developers',
+    date: '2024',
+    pdf: '/Certificates/AI-ML.pdf',
+    tags: ['Google', 'ML', 'Development'],
+    description: 'Gained expertise in building scalable and reliable machine learning and AI models for real-world applications.'
   },
   {
     id: '3',
-    title: 'Microsoft Certified: Azure Developer Associate',
-    issuer: 'Microsoft',
-    date: '2023',
-    url: 'https://www.microsoft.com/en-us/learning/',
-    tags: ['Cloud', 'Azure', 'Development'],
-    description: 'Designing and building cloud solutions on Microsoft Azure'
+    title: 'CYBERSECURITY INTERNSHIP',
+    issuer: 'Cisco Virtual Internship',
+    date: '2024',
+    pdf: '/Certificates/CYBERSECURITY.pdf',
+    tags: ['Cybersecurity', 'Cisco', 'Development'],
+    description: 'Completed a cybersecurity internship with hands-on experience in threat detection, vulnerability assessment, and implementing security best practices.'
   },
   {
     id: '4',
-    title: 'Full Stack Web Development',
-    issuer: 'Meta',
-    date: '2023',
-    url: 'https://www.meta.com/',
-    tags: ['Web Development', 'React', 'Node.js'],
-    description: 'Comprehensive full-stack development certification'
+    title: 'Python Data Structures & Algorithms + LEETCODE Exercises',
+    issuer: 'Udemy-Scott Barrett',
+    date: '2024',
+    pdf: 'https://www.udemy.com/certificate/UC-cd6973b8-71fc-41b8-ab25-b6edb32fee5f/',
+    tags: ['Python', 'DSA', 'Leetcode'],
+    description: 'Completed Python Data Structures & Algorithms training with hands-on LeetCode exercises, strengthening problem-solving skills and coding proficiency for technical interviews and real-world applications.'
   },
   {
     id: '5',
-    title: 'Machine Learning Specialization',
-    issuer: 'Stanford Online',
-    date: '2023',
-    url: 'https://online.stanford.edu/',
-    tags: ['AI', 'Machine Learning', 'Data Science'],
-    description: 'Advanced machine learning and AI concepts'
+    title: 'Data Structures and OOP with C++ : CS104, CS105 Masterclass',
+    issuer: 'Udemy-OakSaly Academy',
+    date: '2024',
+    pdf: 'https://www.udemy.com/certificate/UC-2262056f-28d2-4b17-a110-2a4d62f5958d/',
+    tags: [ 'Algorithms', 'C++'],
+    description: 'Completed Data Structures and Object-Oriented Programming with C++ (CS104, CS105 Masterclass), gaining in-depth knowledge of core concepts like classes, inheritance, pointers, and algorithmic problem-solving.'
   },
-  {
-    id: '6',
-    title: 'DevOps Engineering',
-    issuer: 'Google Cloud',
-    date: '2023',
-    url: 'https://cloud.google.com/',
-    tags: ['DevOps', 'CI/CD', 'Cloud'],
-    description: 'DevOps practices and tools certification'
-  }
+  
 ] 

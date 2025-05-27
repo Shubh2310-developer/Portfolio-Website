@@ -82,20 +82,20 @@ export function Hero() {
             className="text-center md:text-left"
           >
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-foreground"
             >
               Hi, I'm <span className="text-primary">Shubh</span>
             </motion.h1>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-foreground min-h-[3rem]"
-            >
+          >
               <span className="inline-block">I'm a </span>
               <motion.span
                 className="inline-block text-primary ml-2"
@@ -110,20 +110,20 @@ export function Hero() {
                   className="inline-block w-[2px] h-[1em] bg-primary ml-[2px] align-middle"
                 />
               </motion.span>
-            </motion.div>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl md:max-w-none"
-            >
+          >
               A passionate software engineer specializing in AI and web development.
-            </motion.p>
+          </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4 md:justify-start justify-center"
             >
@@ -132,7 +132,7 @@ export function Hero() {
               </Button>
               <Button variant="outline" size="lg" onClick={scrollToContact} className="rounded-full px-8 py-3">
                 Contact Me
-              </Button>
+            </Button>
             </motion.div>
           </motion.div>
 

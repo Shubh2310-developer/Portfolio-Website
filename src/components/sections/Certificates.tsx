@@ -32,9 +32,9 @@ export function Certificates() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4 text-foreground">Certificates & Achievements</h2>
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Internships and Certifications</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my professional certifications and achievements that demonstrate my expertise and commitment to continuous learning.
+            A showcase of my professional certifications and Internships that demonstrate my expertise and commitment to continuous learning.
           </p>
         </motion.div>
 
