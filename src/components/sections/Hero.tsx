@@ -74,6 +74,36 @@ export function Hero() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+          {/* Image Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50, rotate: 10 }}
+            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+            className="relative w-full max-w-xl mx-auto aspect-square order-first md:order-none"
+          >
+            {/* 
+              Replace the src with the actual path to your image.
+              Ensure your image is in the public directory (e.g., public/images/your-image.png)
+            */}
+            <Image
+              src="/ShubhCyber.jpeg" 
+              alt="Shubh - Hero Image" 
+              fill
+              priority
+              className="object-cover rounded-full"
+            />
+            {/* Add some subtle animation to the image */} 
+            <motion.div
+              animate={{
+                y: [0, 15, 0],
+                rotate: [0, 1, -1, 0] 
+              }}
+              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute inset-0"
+            />
+          </motion.div>
+
           {/* Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -136,34 +166,6 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Image Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 50, rotate: 10 }}
-            animate={{ opacity: 1, x: 0, rotate: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            className="relative w-full max-w-sm mx-auto md:max-w-none aspect-square"
-          >
-            {/* 
-              Replace the src with the actual path to your image.
-              Ensure your image is in the public directory (e.g., public/images/your-image.png)
-            */}
-            <Image
-              src="/ShubhCyber.jpeg" 
-              alt="Shubh - Hero Image" 
-              fill
-              priority
-              className="object-cover rounded-full"
-            />
-            {/* Add some subtle animation to the image */} 
-            <motion.div
-              animate={{
-                y: [0, 15, 0],
-                rotate: [0, 1, -1, 0] 
-              }}
-              transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute inset-0"
-            />
-          </motion.div>
         </div>
       </div>
 
