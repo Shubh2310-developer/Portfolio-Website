@@ -33,6 +33,7 @@ const projects = [
     technologies: ['Python', 'Machine Learning', 'Logistic Regression' ],
     github: 'https://github.com/Shubh2310-developer/health-care-website'
   },
+  
 ];
 
 export function Projects() {
