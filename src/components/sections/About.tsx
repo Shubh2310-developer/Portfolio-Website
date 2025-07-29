@@ -60,7 +60,7 @@ export function About() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/resume/ShubhShahResume-2.pdf">
+                  <Link href="/resume/ShubhShahResume (1).pdf">
                     Download Resume
                   </Link>
                 </Button>
