@@ -10,55 +10,39 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'AI-Powered Chat Application',
-    description: 'A real-time chat application with AI-powered responses and sentiment analysis. Features include natural language processing, real-time message delivery, and user authentication.',
-    image: '/projects/ai-chat.jpg',
-    technologies: ['React', 'Node.js', 'TensorFlow', 'WebSocket', 'MongoDB'],
-    github: 'https://github.com/shubh/ai-chat',
-    demo: 'https://ai-chat.vercel.app',
+    title: 'Fake News Game Theory Platform',
+    description: 'Developed an end-to-end research platform integrating game theory, machine learning (DistilBERT, LSTM 99.9% F1), and network analysis to predict fake news propagation and simulate strategic agent interactions. Engineered full-stack architecture using FastAPI, PostgreSQL, Next.js, and Redis, enabling real-time visualization of simulations and equilibrium outcomes. Analyzed 44K+ news samples using ML and game theory to model and mitigate misinformation spread.',
+    image: '/projects/fake-news.jpg',
+    technologies: ['Python', 'DistilBERT', 'LSTM', 'FastAPI', 'PostgreSQL', 'Next.js', 'Redis', 'Game Theory'],
+    github: 'https://github.com/Shubh2310-developer',
+    demo: 'https://github.com/Shubh2310-developer',
     featured: true
   },
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform with real-time inventory management, secure payment processing, and an intuitive admin dashboard.',
-    image: '/projects/ecommerce.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'Prisma'],
-    github: 'https://github.com/shubh/ecommerce',
-    demo: 'https://ecommerce.vercel.app',
+    title: 'Employee Performance Prediction',
+    description: 'Predicted employee performance using machine learning on HR data. Built a reusable ML pipeline using Python, scikit-learn, pandas, Label Encoding, and GridSearchCV. Achieved accurate predictions and improved HR insights through comprehensive data analysis and model optimization.',
+    image: '/projects/employee-performance.jpg',
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'GridSearchCV', 'Label Encoding', 'ML'],
+    github: 'https://github.com/Shubh2310-developer',
+    demo: 'https://github.com/Shubh2310-developer',
     featured: true
   },
   {
-    title: 'Machine Learning Dashboard',
-    description: 'Interactive dashboard for visualizing and analyzing machine learning models. Includes real-time data processing and custom visualization tools.',
-    image: '/projects/ml-dashboard.jpg',
-    technologies: ['Python', 'React', 'D3.js', 'FastAPI', 'TensorFlow'],
-    github: 'https://github.com/shubh/ml-dashboard',
-    demo: 'https://ml-dashboard.vercel.app',
+    title: 'Data Analysis & Visualization Projects',
+    description: 'Comprehensive data analysis projects focusing on ETL processes, statistical analysis, and creating insightful visualizations. Leveraging SQL, Python, and modern data visualization tools to transform raw data into actionable business insights.',
+    image: '/projects/data-analysis.jpg',
+    technologies: ['Python', 'SQL', 'Pandas', 'Matplotlib', 'Seaborn', 'ETL', 'Statistics'],
+    github: 'https://github.com/Shubh2310-developer',
+    demo: 'https://github.com/Shubh2310-developer',
     featured: true
   },
   {
-    title: 'Task Management System',
-    description: 'Collaborative task management system with real-time updates, team features, and project analytics.',
-    image: '/projects/task-manager.jpg',
-    technologies: ['React', 'Firebase', 'Material-UI', 'Redux', 'TypeScript'],
-    github: 'https://github.com/shubh/task-manager',
-    demo: 'https://task-manager.vercel.app',
+    title: 'ML & NLP Projects',
+    description: 'Various machine learning and natural language processing projects including classification, regression, and text analysis tasks. Implemented using modern ML frameworks and achieving high accuracy through feature engineering and model optimization.',
+    image: '/projects/ml-nlp.jpg',
+    technologies: ['Python', 'NLP', 'Machine Learning', 'TensorFlow', 'Scikit-learn', 'Deep Learning'],
+    github: 'https://github.com/Shubh2310-developer',
+    demo: 'https://github.com/Shubh2310-developer',
     featured: true
-  },
-  {
-    title: 'Weather Forecast App',
-    description: 'Real-time weather forecasting application with location-based services and interactive maps.',
-    image: '/projects/weather-app.jpg',
-    technologies: ['React', 'OpenWeather API', 'Leaflet', 'TypeScript'],
-    github: 'https://github.com/shubh/weather-app',
-    demo: 'https://weather-app.vercel.app'
-  },
-  {
-    title: 'Portfolio Website',
-    description: 'Personal portfolio website showcasing projects and skills with modern design and animations.',
-    image: '/projects/portfolio.jpg',
-    technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
-    github: 'https://github.com/shubh/portfolio',
-    demo: 'https://shubh-portfolio.vercel.app'
   }
 ]

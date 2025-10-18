@@ -3,57 +3,56 @@ import { Certificate } from '@/types/certificate'
 export const certificates: Certificate[] = [
   {
     id: '1',
-    title: 'BITS PILANI HACKATHON',
-    issuer: 'TechXcelerate',
-    date: '2025',
-    pdf: '/Certificates/2025-05-19 22-41-11.pdf',
-    tags: ['ML', 'Python', 'LLM'],
-    description: 'Attended BITS Pilani Hackathon to collaborate with top talent and build innovative tech solutions under time-bound challenges.'
+    title: 'Python Data Structures & Algorithms + LEETCODE Exercises',
+    issuer: 'Udemy - Scott Barrett',
+    date: 'August 2024',
+    pdf: 'https://www.udemy.com/certificate/UC-cd6973b8-71fc-41b8-ab25-b6edb32fee5f/',
+    tags: ['Python', 'DSA', 'Algorithms'],
+    description: 'Completed Python Data Structures & Algorithms training with hands-on LeetCode exercises, strengthening problem-solving skills and coding proficiency for technical interviews and real-world applications.'
   },
   {
     id: '2',
-    title: 'MACHINE LEARNING',
-    issuer: 'Agartas Academy',
-    date: '2024',
-    pdf: '/Certificates/ML.pdf',
-    tags: ['ML', 'Python', 'Deep Learning'],
-    description: 'Completed a hands-on Machine Learning internship, gaining practical experience in model development, evaluation, and real-world data analysis.'
+    title: 'AWS Academy Graduate - Generative AI Foundations',
+    issuer: 'AWS Academy',
+    date: 'August 2025',
+    pdf: '/Certificates/AWS-GenAI.pdf',
+    tags: ['AWS', 'Generative AI', 'Cloud'],
+    description: 'Completed AWS Academy course on Generative AI Foundations, gaining expertise in building and deploying AI models using AWS services.'
   },
   {
     id: '3',
-    title: 'AI-ML INTERNSHIP',
-    issuer: 'Google for Developers',
-    date: '2024',
-    pdf: '/Certificates/AI-ML.pdf',
-    tags: ['Google', 'ML', 'Development'],
-    description: 'Gained expertise in building scalable and reliable machine learning and AI models for real-world applications.'
+    title: 'Machine Learning Internship',
+    issuer: 'Agartas Academy',
+    date: 'August 2024 - October 2024',
+    pdf: '/Certificates/ML.pdf',
+    tags: ['ML', 'Python', 'Internship'],
+    description: 'Gained hands-on machine learning experience during internship, applying theoretical knowledge to real-world projects. Demonstrated problem solving, collaboration, planning, agile, productivity and communication skills.'
   },
   {
     id: '4',
-    title: 'CYBERSECURITY INTERNSHIP',
-    issuer: 'Cisco Virtual Internship',
-    date: '2024',
-    pdf: '/Certificates/CYBERSECURITY.pdf',
-    tags: ['Cybersecurity', 'Cisco', 'Development'],
-    description: 'Completed a cybersecurity internship with hands-on experience in threat detection, vulnerability assessment, and implementing security best practices.'
+    title: 'AI & ML Internship',
+    issuer: 'AICTE-Eduskill Virtual Internship',
+    date: 'July 2024 - September 2024',
+    pdf: '/Certificates/AI-ML.pdf',
+    tags: ['AI', 'ML', 'Internship'],
+    description: 'Completed a 2-month virtual internship focused on AI/ML applications in real-world scenarios. Gained hands-on experience with supervised learning, model evaluation, and performance tuning. Built and deployed ML models for classification and regression tasks using Python and Scikit-learn.'
   },
   {
     id: '5',
-    title: 'Python Data Structures & Algorithms + LEETCODE Exercises',
-    issuer: 'Udemy-Scott Barrett',
-    date: '2024',
-    pdf: 'https://www.udemy.com/certificate/UC-cd6973b8-71fc-41b8-ab25-b6edb32fee5f/',
-    tags: ['Python', 'DSA', 'Leetcode'],
-    description: 'Completed Python Data Structures & Algorithms training with hands-on LeetCode exercises, strengthening problem-solving skills and coding proficiency for technical interviews and real-world applications.'
+    title: 'BITS PILANI HACKATHON',
+    issuer: 'BITS Pilani',
+    date: '2025',
+    pdf: '/Certificates/2025-05-19 22-41-11.pdf',
+    tags: ['Hackathon', 'Innovation', 'Team'],
+    description: 'Participated in BITS Pilani Hackathon to collaborate with top talent and build innovative tech solutions under time-bound challenges.'
   },
   {
     id: '6',
     title: 'Data Structures and OOP with C++ : CS104, CS105 Masterclass',
-    issuer: 'Udemy-OakSaly Academy',
+    issuer: 'Udemy - OakSaly Academy',
     date: '2024',
     pdf: 'https://www.udemy.com/certificate/UC-2262056f-28d2-4b17-a110-2a4d62f5958d/',
-    tags: [ 'Algorithms', 'C++'],
+    tags: ['C++', 'DSA', 'OOP'],
     description: 'Completed Data Structures and Object-Oriented Programming with C++ (CS104, CS105 Masterclass), gaining in-depth knowledge of core concepts like classes, inheritance, pointers, and algorithmic problem-solving.'
   },
-  
 ] 

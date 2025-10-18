@@ -1,12 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
-import Header from '@/components/layout/Header'
-import Footer from '@/components/layout/Footer'
-import ParticleBackground from '@/components/background/ParticleBackground'
-import AICursor from '@/components/ui/AICursor'
+import CyberHeader from '@/components/layout/CyberHeader'
+import CyberFooter from '@/components/layout/CyberFooter'
+import MatrixRain from '@/components/background/MatrixRain'
 import CommandPalette from '@/components/ui/CommandPalette'
-import ThemeToggle from '@/components/ui/ThemeToggle'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3002'),
@@ -28,26 +26,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
-      <body className="min-h-screen bg-background font-sans antialiased overflow-x-hidden">
+      <body className="min-h-screen bg-black font-sans antialiased overflow-x-hidden">
         <ThemeProvider>
-          {/* Three.js Neural Network Background */}
-          <ParticleBackground />
+          {/* Matrix Rain Background */}
+          <MatrixRain />
 
-          {/* Custom AI Cursor */}
-          <AICursor />
+          {/* Cyber Header */}
+          <CyberHeader />
 
           {/* Command Palette */}
           <CommandPalette />
 
-          {/* Theme Toggle */}
-          <ThemeToggle />
-
           <div className="relative flex min-h-screen flex-col">
-            <Header />
             <main className="flex-1">
               {children}
             </main>
-            <Footer />
+            <CyberFooter />
           </div>
         </ThemeProvider>
       </body>

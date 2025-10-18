@@ -1,21 +1,19 @@
-import Header from '@/components/layout/Header';
-import { Hero } from '@/components/sections/Hero';
-import { About } from '@/components/sections/About';
-import { Skills } from '@/components/sections/Skills';
-import { Projects } from '@/components/sections/Projects';
-import { Certificates } from '@/components/sections/Certificates';
-import { Contact } from '@/components/sections/Contact';
+import { TerminalHero } from '@/components/sections/TerminalHero';
+import { TerminalAbout } from '@/components/sections/TerminalAbout';
+import { NeuralSkills } from '@/components/sections/NeuralSkills';
+import { CyberProjects } from '@/components/sections/CyberProjects';
+import { TerminalCertificates } from '@/components/sections/TerminalCertificates';
+import { CLIContact } from '@/components/sections/CLIContact';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white dark:bg-gray-900 pt-16">
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Certificates />
-      <Contact />
+    <main className="min-h-screen bg-black">
+      <TerminalHero />
+      <TerminalAbout />
+      <NeuralSkills />
+      <CyberProjects />
+      <TerminalCertificates />
+      <CLIContact />
     </main>
   );
 }

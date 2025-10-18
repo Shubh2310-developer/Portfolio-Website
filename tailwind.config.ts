@@ -57,8 +57,9 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ['Rajdhani', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['Orbitron', 'Space Grotesk', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
@@ -74,6 +75,12 @@ const config: Config = {
         'border-flow': 'borderFlow 3s linear infinite',
         'neuron-pulse': 'neuronPulse 2s ease-in-out infinite',
         'shimmer': 'shimmer 2s linear infinite',
+        'glitch': 'glitch 1s ease-in-out infinite',
+        'matrix-rain': 'matrixRain 20s linear infinite',
+        'scanline': 'scanline 8s linear infinite',
+        'data-stream': 'dataStream 20s linear infinite',
+        'terminal-blink': 'terminalBlink 1s step-end infinite',
+        'hologram-flicker': 'hologramFlicker 0.1s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -123,6 +130,33 @@ const config: Config = {
         shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
           '100%': { backgroundPosition: '200% 0' },
+        },
+        glitch: {
+          '0%, 100%': { transform: 'translate(0)' },
+          '20%': { transform: 'translate(-2px, 2px)' },
+          '40%': { transform: 'translate(-2px, -2px)' },
+          '60%': { transform: 'translate(2px, 2px)' },
+          '80%': { transform: 'translate(2px, -2px)' },
+        },
+        matrixRain: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100vh)' },
+        },
+        scanline: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        dataStream: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
+        },
+        terminalBlink: {
+          '0%, 50%': { opacity: '1' },
+          '51%, 100%': { opacity: '0' },
+        },
+        hologramFlicker: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.8' },
         },
       },
       backgroundImage: {
