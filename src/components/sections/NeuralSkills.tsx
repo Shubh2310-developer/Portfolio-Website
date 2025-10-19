@@ -63,21 +63,38 @@ export function NeuralSkills() {
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Draw connections
-      ctx.strokeStyle = '#00ff41';
-      ctx.lineWidth = 0.5;
+      // Draw connections with enhanced visibility
       nodes.forEach((node, i) => {
         nodes.slice(i + 1).forEach((otherNode) => {
           const dx = node.x - otherNode.x;
           const dy = node.y - otherNode.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 150) {
-            ctx.globalAlpha = (1 - distance / 150) * 0.3;
+          // Increased connection distance for more visible network
+          if (distance < 280) {
+            const opacity = (1 - distance / 280) * 0.7;
+
+            // Draw connection line with gradient
+            const gradient = ctx.createLinearGradient(node.x, node.y, otherNode.x, otherNode.y);
+            gradient.addColorStop(0, `rgba(0, 255, 65, ${opacity})`);
+            gradient.addColorStop(0.5, `rgba(0, 217, 255, ${opacity * 0.8})`);
+            gradient.addColorStop(1, `rgba(0, 255, 65, ${opacity})`);
+
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = opacity * 2.5;
+            ctx.globalAlpha = 1;
             ctx.beginPath();
             ctx.moveTo(node.x, node.y);
             ctx.lineTo(otherNode.x, otherNode.y);
             ctx.stroke();
+
+            // Add outer glow for stronger connections
+            if (distance < 180) {
+              ctx.strokeStyle = `rgba(0, 255, 65, ${opacity * 0.2})`;
+              ctx.lineWidth = opacity * 5;
+              ctx.globalAlpha = 0.5;
+              ctx.stroke();
+            }
           }
         });
       });

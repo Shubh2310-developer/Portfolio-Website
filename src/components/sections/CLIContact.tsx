@@ -1,13 +1,14 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 export function CLIContact() {
+  const [mounted, setMounted] = useState(false);
   const [command, setCommand] = useState('');
   const [output, setOutput] = useState<string[]>([
-    'ghost@ai-engineer:~$ contact --help',
+    'shubh@ai-engineer:~$ contact --help',
     '',
     'CONTACT FORM - Command Line Interface',
     '====================================',
@@ -32,6 +33,10 @@ export function CLIContact() {
     message: '',
   });
   const [isSending, setIsSending] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleCommand = async (cmd: string) => {
     const parts = cmd.trim().split(' ');
@@ -96,14 +101,16 @@ export function CLIContact() {
 
   return (
     <section id="contact" className="py-32 relative overflow-hidden">
-      {/* Binary background */}
-      <div className="absolute inset-0 opacity-5 font-mono text-[10px] text-[#00ff41] overflow-hidden select-none">
-        {Array.from({ length: 50 }).map((_, i) => (
-          <div key={i}>
-            {Array.from({ length: 200 }).map(() => (Math.random() > 0.5 ? '1' : '0')).join('')}
-          </div>
-        ))}
-      </div>
+      {/* Binary background - client only to avoid hydration */}
+      {mounted && (
+        <div className="absolute inset-0 opacity-5 font-mono text-[10px] text-[#00ff41] overflow-hidden select-none pointer-events-none">
+          {Array.from({ length: 50 }).map((_, i) => (
+            <div key={i}>
+              {Array.from({ length: 200 }).map(() => (Math.random() > 0.5 ? '1' : '0')).join('')}
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div

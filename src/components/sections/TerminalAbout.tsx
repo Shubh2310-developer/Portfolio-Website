@@ -83,14 +83,14 @@ export function TerminalAbout() {
 
                 <div>
                   <span className="text-[#00d9ff]">ROLE:</span>
-                  <span className="text-[#00ff41] ml-2">Data Analyst | AI & DS Engineer</span>
+                  <span className="text-[#00ff41] ml-2">AI Engineer | ML Specialist</span>
                 </div>
 
                 <div>
                   <span className="text-[#00d9ff]">PROFILE:</span>
                   <div className="text-[#00ff41]/80 ml-2 mt-1 leading-relaxed">
-                    Detail-oriented Data Analyst with a B.Tech in AI & Data Science and Google
-                    certification, skilled in Python, ML, and data-driven solutions.
+                    Detail-oriented AI Engineer with B.Tech in AI & Data Science and Google
+                    certification, skilled in Python, Machine Learning, NLP, and data-driven solutions.
                   </div>
                 </div>
 

@@ -8,29 +8,35 @@ export function TerminalHero() {
   const [displayedText, setDisplayedText] = useState('');
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [showCursor, setShowCursor] = useState(true);
+  const [mounted, setMounted] = useState(false);
 
   const terminalLines = [
-    { command: '$ ssh shubh@data-analyst.dev', delay: 0 },
+    { command: '$ ssh shubh@ai-engineer.dev', delay: 0 },
     { command: 'Connecting to remote host...', delay: 800 },
     { command: '█████████████████████ 100%', delay: 1600 },
     { command: 'Connection established.', delay: 2200 },
     { command: '', delay: 2600 },
     { command: '$ whoami', delay: 3000 },
-    { command: '> DATA ANALYST | AI & DS ENGINEER | ML SPECIALIST', delay: 3800 },
+    { command: '> AI ENGINEER | ML SPECIALIST | DATA SCIENTIST', delay: 3800 },
     { command: '', delay: 4200 },
     { command: '$ cat profile.txt', delay: 4600 },
-    { command: '> Detail-oriented Data Analyst with B.Tech in AI & Data Science', delay: 5200 },
-    { command: '> Skilled in Python, ML, and data-driven solutions', delay: 5600 },
-    { command: '> Google certified | Building intelligent systems', delay: 6000 },
+    { command: '> AI & Data Science Engineer | B.Tech in AI & DS', delay: 5200 },
+    { command: '> Specializing in ML, NLP, Generative AI & Data-Driven Solutions', delay: 5600 },
+    { command: '> Building intelligent systems that transform data into insights', delay: 6000 },
     { command: '', delay: 6400 },
     { command: '$ ls skills/', delay: 6800 },
-    { command: 'python/  sql/  machine-learning/  nlp/', delay: 7400 },
-    { command: 'aws/  postgresql/  mongodb/  data-viz/', delay: 7600 },
+    { command: 'python/  machine-learning/  nlp/  generative-ai/', delay: 7400 },
+    { command: 'aws/  sql/  fastapi/  data-analysis/', delay: 7600 },
     { command: '', delay: 8000 },
     { command: '$ █', delay: 8200 },
   ];
 
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return;
     if (currentLineIndex >= terminalLines.length) return;
 
     const currentLine = terminalLines[currentLineIndex];
@@ -52,7 +58,7 @@ export function TerminalHero() {
     }, currentLineIndex === 0 ? 0 : 100);
 
     return () => clearTimeout(timeout);
-  }, [currentLineIndex]);
+  }, [currentLineIndex, mounted]);
 
   useEffect(() => {
     const cursorInterval = setInterval(() => {
@@ -61,6 +67,35 @@ export function TerminalHero() {
 
     return () => clearInterval(cursorInterval);
   }, []);
+
+  if (!mounted) {
+    return (
+      <section id="home" className="min-h-screen flex items-center justify-center relative px-4 py-20">
+        <div className="w-full max-w-4xl relative">
+          <div className="bg-[#1a1a1a] border border-[#00ff41]/30 rounded-t-lg p-3 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="flex gap-2">
+                <div className="w-3 h-3 rounded-full bg-[#ff2a6d]" />
+                <div className="w-3 h-3 rounded-full bg-[#ffaa00]" />
+                <div className="w-3 h-3 rounded-full bg-[#00ff41]" />
+              </div>
+              <div className="flex items-center gap-2 text-[#00ff41] text-sm font-mono">
+                <Terminal className="w-4 h-4" />
+                <span>shubh@ai-engineer: ~</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-3">
+              <Wifi className="w-4 h-4 text-[#00ff41]" />
+              <Power className="w-4 h-4 text-[#00ff41]" />
+            </div>
+          </div>
+          <div className="bg-black/95 border-x border-b border-[#00ff41]/30 rounded-b-lg p-6 min-h-[500px] font-mono text-sm overflow-hidden relative">
+            <div className="absolute inset-0 bg-[#00ff41]/5 blur-xl pointer-events-none" />
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative px-4 py-20">
@@ -86,7 +121,7 @@ export function TerminalHero() {
             </div>
             <div className="flex items-center gap-2 text-[#00ff41] text-sm font-mono">
               <Terminal className="w-4 h-4" />
-              <span>shubh@data-analyst: ~</span>
+              <span>shubh@ai-engineer: ~</span>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -127,7 +162,7 @@ export function TerminalHero() {
           <div className="flex gap-4">
             <span>STATUS: ONLINE</span>
             <span>|</span>
-            <span>SYSTEM: DATA_ANALYST_V2.0</span>
+            <span>SYSTEM: AI_ENGINEER_V2.0</span>
           </div>
           <div>
             <span className="animate-pulse">●</span> LIVE

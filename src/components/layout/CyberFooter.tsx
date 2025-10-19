@@ -99,7 +99,7 @@ export default function CyberFooter() {
                 SHUBH.DEV
               </h3>
               <div className="font-mono text-xs text-gray-400 space-y-1">
-                <div>{'>'} DATA ANALYST | AI & DS ENGINEER</div>
+                <div>{'>'} AI ENGINEER | ML SPECIALIST</div>
                 <div>{'>'} TRANSFORMING DATA INTO INSIGHTS</div>
                 <div className="flex items-center gap-2 mt-2">
                   <span className="w-2 h-2 bg-[#00ff41] rounded-full animate-pulse" />

@@ -8,13 +8,13 @@ import CommandPalette from '@/components/ui/CommandPalette'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3002'),
-  title: 'Ghost - AI Engineer | Engineering the Future of Intelligence',
-  description: 'Personal portfolio of an AI Engineer merging technical mastery with digital artistry. Showcasing innovative AI projects and cutting-edge development.',
-  keywords: ['AI Engineer', 'Machine Learning', 'Artificial Intelligence', 'Full Stack Developer', 'Neural Networks', 'Deep Learning'],
-  authors: [{ name: 'Ghost' }],
+  title: 'Shubh Shah - AI Engineer | ML Specialist | Data Scientist',
+  description: 'Portfolio of Shubh Shah - AI & Data Science Engineer specializing in Machine Learning, NLP, Generative AI, and Data-Driven Solutions. B.Tech in AI & DS.',
+  keywords: ['AI Engineer', 'Machine Learning', 'Data Science', 'NLP', 'Generative AI', 'Python', 'Deep Learning', 'Data Analysis'],
+  authors: [{ name: 'Shubh Shah' }],
   openGraph: {
-    title: 'Ghost - AI Engineer | Engineering the Future of Intelligence',
-    description: 'Personal portfolio of an AI Engineer merging technical mastery with digital artistry.',
+    title: 'Shubh Shah - AI Engineer | ML Specialist',
+    description: 'AI & Data Science Engineer | Building intelligent systems that transform data into insights',
     type: 'website',
   },
 }
@@ -28,6 +28,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <body className="min-h-screen bg-black font-sans antialiased overflow-x-hidden">
         <ThemeProvider>
+          {/* Background Effects - Subtle Only */}
+
           {/* Matrix Rain Background */}
           <MatrixRain />
 
