@@ -12,7 +12,7 @@ const projects = [
     image: '/projects/AI POWERED HEALTHCARE.jpeg',
     technologies: ['Python', 'TensorFlow', 'Phi-2 LLM'],
     github: 'https://github.com/Shubh2310-developer/HC-P1-AI-based-Early-Disease-Detection-System',
-    status: 'DEPLOYED',
+    status: 'ACTIVE',
   },
   {
     title: 'TEXT-TO-IMAGE-GEN.AI',
@@ -36,7 +36,7 @@ const projects = [
     image: '/projects/HEART.jpeg',
     technologies: ['Python', 'ML', 'Logistic Regression'],
     github: 'https://github.com/Shubh2310-developer/health-care-website',
-    status: 'DEPLOYED',
+    status: 'ACTIVE',
   },
 ];
 

@@ -65,6 +65,21 @@ export function CLIContact() {
         return;
       }
 
+      // Check if EmailJS is configured
+      if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ||
+          !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ||
+          !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ||
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID === 'your_service_id_here') {
+        setOutput((prev) => [
+          ...prev,
+          '✗ Email service not configured.',
+          '✗ Please contact directly via email: shahshubh655@gmail.com',
+          '✗ Or LinkedIn: https://linkedin.com/in/shahshubh655',
+          '',
+        ]);
+        return;
+      }
+
       setIsSending(true);
       setOutput((prev) => [...prev, 'Sending message...', '']);
 
@@ -84,7 +99,13 @@ export function CLIContact() {
         ]);
         setFormData({ name: '', email: '', message: '' });
       } catch (error) {
-        setOutput((prev) => [...prev, '✗ Error sending message. Please try again.', '']);
+        console.error('EmailJS Error:', error);
+        setOutput((prev) => [
+          ...prev,
+          '✗ Error sending message. Please try again.',
+          '✗ Or contact directly: shahshubh655@gmail.com',
+          '',
+        ]);
       } finally {
         setIsSending(false);
       }

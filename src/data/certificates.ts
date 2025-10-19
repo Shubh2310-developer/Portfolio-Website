@@ -15,7 +15,7 @@ export const certificates: Certificate[] = [
     title: 'AWS Academy Graduate - Generative AI Foundations',
     issuer: 'AWS Academy',
     date: 'August 2025',
-    pdf: '/Certificates/AWS-GenAI.pdf',
+    pdf: 'https://www.credly.com/badges/97369f0d-bf25-4a79-8427-3c161b89de47',
     tags: ['AWS', 'Generative AI', 'Cloud'],
     description: 'Completed AWS Academy course on Generative AI Foundations, gaining expertise in building and deploying AI models using AWS services.'
   },

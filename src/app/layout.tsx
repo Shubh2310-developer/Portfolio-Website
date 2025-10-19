@@ -5,6 +5,7 @@ import CyberHeader from '@/components/layout/CyberHeader'
 import CyberFooter from '@/components/layout/CyberFooter'
 import MatrixRain from '@/components/background/MatrixRain'
 import CommandPalette from '@/components/ui/CommandPalette'
+import ScrollReset from '@/components/ScrollReset'
 
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3002'),
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <body className="min-h-screen bg-black font-sans antialiased overflow-x-hidden">
+        <ScrollReset />
         <ThemeProvider>
           {/* Background Effects - Subtle Only */}
 
